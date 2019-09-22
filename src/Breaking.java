@@ -8,24 +8,22 @@ public class Breaking {
 		
 		long odd = 0;
 	    long even =0;
-	    long input = 0;
+	    long input1 = 0;
 	    int res =0;
 	    
-	    scanf("%l",&input);
+	    input1 = input.nextLong();
 	    
-	    while(input!=0){
+	    while(input1!=0){
 	        
-	        res=input%10;
+	        res=(int) (input1%10);
 	        if(res%2==0)
 	            odd+=res;
 	        else 
 	            even+=res;
-	        input=input/10;
+	        input1=input1/10;
 	    }
-	    int difference = odd-even;
+	    int difference = (int) (odd-even);
 	    System.out.println(difference);
 		}
 
 	}
-
-}
